@@ -1,0 +1,1 @@
+create table if not exists Users (id SERIAL primary key, username VARCHAR NOT NULL)

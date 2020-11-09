@@ -1,0 +1,22 @@
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+
+spring:
+  jpa:
+    generate-ddl: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  hibernate:
+    ddl-auto: none
+    show-sql: true
+  datasource:
+    initialization-mode: always
+    continue-on-error: true
+    url: jdbc:postgresql://simply-schedule.c3rxphem9o4b.us-east-2.rds.amazonaws.com:5432/postgres
+    username: ENC(arBpZ1tyJQnHzip56p+PmXDQooVzJ8XR)
+    password: ENC(i1424blZl8CpD1Yfn/VBrx5hHvZa/yWF)
+    driverClassName: org.postgresql.Driver
+
