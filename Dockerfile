@@ -9,4 +9,4 @@ ARG JAR_FILE=target/*.jar
 # Copy the JAR
 COPY ${JAR_FILE} simply-schedule-0.0.1-SNAPSHOT.jar
 # Set ENTRYPOINT in exec form to run the container as an executable
-ENTRYPOINT ["java","-jar","/simply-schedule-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-Dspring.profiles.active=prod" ,"-Djasypt.encryptor.password=1a2b3c4d","-jar","/simply-schedule-0.0.1-SNAPSHOT.jar"]
