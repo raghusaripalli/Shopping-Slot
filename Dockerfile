@@ -10,3 +10,5 @@ ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} simply-schedule-0.0.1-SNAPSHOT.jar
 # Set ENTRYPOINT in exec form to run the container as an executable
 ENTRYPOINT ["java", "-Dspring.profiles.active=prod" ,"-Djasypt.encryptor.password=1a2b3c4d","-jar","/simply-schedule-0.0.1-SNAPSHOT.jar"]
+# Expose port 8080 to hit the api
+EXPOSE 8080
