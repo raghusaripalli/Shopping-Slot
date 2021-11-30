@@ -1,4 +1,4 @@
-## Simply-Schedule-Backend
+## Shopping-Slot
 
 #### Tech Stack
 - Spring Boot & JPA
